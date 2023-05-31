@@ -88,7 +88,7 @@ app.json -
     configure settings and behavior of the application. File picked up by the expo when app is build for preview
 
 App.js -
-    entry point of the application where the actual jsx code lies
+    entry point of the application where the actual jsx code lies. This is the root component that is rendered in the app.
 
 ```
 
@@ -114,3 +114,7 @@ yarn start
     - Install and open Xcode
     - Open Developer Tool
     - Simulator
+
+
+### About this course
+![About this course](/assets/readme-assets/about-this-course.png)
