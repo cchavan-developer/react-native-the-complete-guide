@@ -37,7 +37,7 @@ const App = props => {
 
 Official Website for reference - https://reactnative.dev/
 
-- Both tools help you create native projects, run apps on simulators as well as build apps so that you can distribute on the app store.
+Both tools help you create native projects, run apps on simulators as well as build apps so that you can distribute on the app store.
 
 ![Expo CLI Vs React Native CLI](/assets/readme-assets/expo-native-cli.png)
 
@@ -48,9 +48,9 @@ Official Website for expo - https://expo.dev/
 Pre-requisites - NodeJS
 
 ```
-npm i -g expo-cli
+- npm i -g expo-cli
 
-expo init my-project
+- expo init react-native-basics
 
 blank               a minimal app as clean as an empty canvas
 blank (TypeScript)  same as blank but with TypeScript configuration
@@ -82,7 +82,7 @@ package.json -
     lists all the dependencies and dev-dependencies of the project along with the scripts commands
 
 babel-config.js - 
-    hot the code is transpiled under the hood
+    how code is transpiled under the hood
 
 app.json -
     configure settings and behavior of the application. File picked up by the expo when app is build for preview

@@ -134,3 +134,66 @@ const styles = StyleSheet.create({
   }
 }
 ````
+
+In order to make the container/view pressable, you have to wrap the View with the native component **Pressable**
+
+### React JS Notes -
+When you need to pass arguments to the function which is passed as props to the component.
+Following is the syntax - 
+
+```
+onPress = { props.function.bind(this, argument1) }
+```
+
+#### NOTE** - You can add default **android ripple** effect and/or an iOS alternative to identify the press state of the item
+Android ripple doesn't have any effect on iOS. The ripple effect on the iOS can be handled using **style attribute**
+
+```
+     <Pressable
+        android_ripple={{ color: "#210644" }}
+        onPress={onDeleteItem.bind(this, itemData.id)}
+        style={({pressed}) => (pressed ? styles.pressedItem: '')}
+      >
+        <Text style={styles.goalText}>{itemData.text}</Text>
+      </Pressable>
+```
+
+#### NOTE** - A pop-up can be shown using a native **Modal** component. 
+Use the built in attributes to show/hide visibility and define animation type - 
+
+```
+    <Modal
+      animationType="slide"
+      visible={visible}
+    >
+      <View style={styles.inputContainer}>
+        <TextInput
+          placeholder="Your course goal!"
+          style={styles.textInput}
+          onChangeText={goalInputHandler}
+          value={enteredGoalText}
+        />
+        <Button title="Add Goal" onPress={addGoal} />
+      </View>
+    </Modal>
+```
+
+#### NOTE** - An image can be added by using a native **Image** component. 
+
+```
+    <!-- Source should relative path to the required image -->
+    <Image 
+        source={require("../assets/images/goal.png")} 
+        style={styles.image}
+    />
+```
+
+#### NOTE** - In an app.json file created using expo, you can add background color configuration
+
+#### NOTE** - You can add style / theme to the statusbar using StatusBar component provided by expo-status-bar
+
+```
+    import { StatusBar } from "expo-status-bar";
+
+    <StatusBar style="light" />s
+```

@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "react-native-basics",
-    "slug": "react-native-basics",
+    "name": "react-native-basics-course-goal-app",
+    "slug": "react-native-basics-course-goal-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "backgroundColor": "#1E085A",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
