@@ -31,7 +31,7 @@ const GoalInput = ({ addGoalHandler, visible, onCancel }) => {
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="Cancel" onPress={onCancel} color={"#F#1282"} />
+            <Button title="Cancel" onPress={onCancel} color={"#F31282"} />
           </View>
           <View style={styles.button}>
             <Button title="Add Goal" onPress={addGoal} color={"#B180F0"} />
