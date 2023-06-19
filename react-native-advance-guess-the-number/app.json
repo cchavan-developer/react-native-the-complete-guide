@@ -3,7 +3,7 @@
     "name": "react-native-advance-guess-the-number",
     "slug": "react-native-advance-guess-the-number",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
