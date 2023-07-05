@@ -5,7 +5,7 @@ import {
   StyleSheet,
   Image,
 } from "react-native";
-import MealDetails from "../components/MealDetails";
+import MealDetails from "../MealDetails";
 
 const MealItem = ({ title, imageUrl, duration, complexity, affordability, onPress }) => {
 
